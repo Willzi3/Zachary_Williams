@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+/* Landing */
+#landing {
+    border: 1px solid black;
+}
+
+/* About Section */
+
+.about_img img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.title:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+    
+}
+/* skills section */
+.skills-item {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.skills-item i {
+    font-size: 100px;
+}
+
+#skills .title h2{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+/* #particles-js {
+    background-color: red;;
+} */
