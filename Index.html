@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./styles.css">
     <!-- Font Awesome-->
     <script src="https://kit.fontawesome.com/7d61db1ee7.js" crossorigin="anonymous"></script>
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <title>Hello, world!</title>
   </head>
   <body>
@@ -56,7 +60,7 @@
       </section>
       <!-- About Section -->
       <section id="About" class="mb-5">
-          <div class="container shadow p-5">
+          <div class="container shadow p-5 bg-white">
               <div class="row mx-5">
                   <div class="col-md-6">
                       <div class="about_img">
@@ -68,23 +72,23 @@
                       <p>I like to describe myself as focused and dedicated. If I do something, I do it to the best of my abilities. If I do not know the answer to something, I won't just sit back and have the answer handed to me. I will make sure to find the answer.</p>
                       <div class="about-details">
                         <div class="details d-flex justify-content-between">
-                            <h4>Full Name</h4>
+                            <h6>Full Name</h6>
                             <p>Zachary Williams</p>
                         </div>
                         <div class="details d-flex justify-content-between">
-                            <h4>Date Of Birth</h4>
+                            <h6>Date Of Birth</h6>
                             <p>200/26/09</p>
                         </div>
                         <div class="details d-flex justify-content-between">
-                            <h4>Address</h4>
+                            <h6>Address</h6>
                             <p>Melkbosstrand</p>
                         </div>
                         <div class="details d-flex justify-content-between">
-                            <h4>Drivers</h4>
+                            <h6>Drivers</h6>
                             <p>None</p>
                         </div>
                         <div class="details d-flex justify-content-between">
-                            <h4>Criminal Record</h4>
+                            <h6>Criminal Record</h6>
                             <p>None</p>
                         </div>
                       </div>
@@ -92,53 +96,159 @@
               </div>
           </div>
       </section>
+
       <!-- Skills Section -->
-      <section id="skills">
+      <section id="skills" class="mb-5">
           <div class="title">
               <h2>SKILLS</h2>
           </div>
           <div class="container bg-white shadow p-5">
             <div class="row">
-                <div class="col-md-6">
-                    <h2>Technical Skills</h2>
-                    <div class="technical d-flex">
-                            <div class="skills-item">
-                                <i class="fa-brands fa-html5"></i>
-                            </div>
-                            <div class="skills-item">
-                                <i class="fa-brands fa-css3-alt"></i>
-                            </div>
-                            <div class="skills-item">
-                                <i class="fa-brands fa-js"></i>
-                            </div>
-                                <div class="skills-item">
-                                    <i class="fa-brands fa-vuejs"></i>
-                                </div>
-                            
-                                <div class="skills-item">
-                                    <i class="fa-brands fa-node-js"></i>
-                                </div>
-                                <div class="skills-item">
-                                    <i class="fa-solid fa-database"></i>
-                                </div>
-                    </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h2>Soft Skills</h2>
-                        <div class="soft">
-                            <ol>
-                                <li>Problem-Solving</li>
-                                <li>Team Player</li>
-                                <li>Time Management</li>
-                                <li>Critical and anylitical thinking</li>
-                            </ol>
-                        </div>
-                    </div>
+                
                 </div>
             </div>
                     
           </div>
       </section>
+      <!-- Project -->
+      <section id="project">
+        <div class="container bg-white shadow p-5">
+          <div class="title text-center">
+            <h2>PROJECTS</h2>
+          </div>
+          <div class="staff d-flex justify-content-center mb-5">
+            <img class="img-fluid" src="./images/ciudad-maderas-MXbM1NrRqtI-unsplash.jpg" />
+            <div class="staff-details">
+              <h5>Name</h5>
+              <p>Occupation</p>
+              links
+            </div>
+          </div>
+          <div class="staff d-flex justify-content-center mb-5">
+            <img class="img-fluid" src="./images/kelsey-curtis--27u_GzlAFw-unsplash.jpg" />
+            <div class="staff-details">
+              <h5>Name</h5>
+              <p>Occupation</p>
+              links
+            </div>
+          </div>
+          <div class="staff d-flex justify-content-center mb-5">
+            <img class="img-fluid" src="./images/marten-bjork-n_IKQDCyrG0-unsplash.jpg" />
+            <div class="staff-details">
+              <h5>Name</h5>
+              <p>Occupation</p>
+              links
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonial -->
+      <section id="testimonial">
+        <div class="container bg-white shadow mb-5 d-flex flex-column justify-content-center align-items-center">
+          <div class="title">
+            <h2>TESTIMONAIL</h2>
+          </div>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <div class="t_img d-flex justify-content-center">
+                    <img class="border border-5 rounded-circle" src="https://picsum.photos/150?random=1" alt="">
+                  </div>
+                  <div class="t_msg p-5 text-center">
+                    <h6>Name Surname</h6>
+                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, delectus quod perspiciatis quos aspernatur a!"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="t_img d-flex justify-content-center">
+                    <img class="border border-5 rounded-circle" src="https://picsum.photos/150?random=2" alt="">
+                  </div>
+                  <div class="t_msg p-5 text-center">
+                    <h6>Name Surname</h6>
+                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, delectus quod perspiciatis quos aspernatur a!"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="t_img d-flex justify-content-center">
+                    <img class="border border-5 rounded-circle" src="https://picsum.photos/150?random=1" alt="">
+                  </div>
+                  <div class="t_msg p-5 text-center">
+                    <h6>Name Surname</h6>
+                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, delectus quod perspiciatis quos aspernatur a!"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="container bg-white shadow">
+          <div class="Jumbotron d-flex justify-content-center align-items-center mb-5 p-5">
+           <div class="row">
+             <div class="col-md-6">
+               <h1>Let's Do<br>Great Things<br>Together.</h1>
+            </div>
+            <div class="col-md-6">
+              <div class="cirlce rounded-circle" style="width: 300px;" id="particles-js">
+              </div>
+            </div>
+           </div>
+          </div>
+          <div class="row mx-3">
+            <div class="col-md-4">
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d6616.706199524373!2d18.485771075965072!3d-33.98346307249869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-33.981002!2d18.486967099999998!4m5!1s0x1dcc433bedd50e81%3A0x9c746d268c8e0ad9!2slife%20choices!3m2!1d-33.985664299999996!2d18.4926986!5e0!3m2!1sen!2sza!4v1652168925235!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="form">
+                <form action="https://formspree.io/f/xjvlpdvg" method="POST">
+                  <div class="row">
+                      <div class="col-md-6 form-group mt-3">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                      </div>
+                      <div class="col-md-6 form-group mt-3">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                      </div>
+                      </div>
+                      <div class="form-group mt-3">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                      </div>
+                      <div class="form-group mt-3">
+                        <textarea name="message" placeholder="Message" rows="5" class="form-control"></textarea>
+                      </div>
+                      <!-- your other form fields go here -->
+                    <div class="form-group mt-3 d-flex justify-content-center mb-3">
+                      <button class="rounded-pill p-2" style="width: 200px;" type="submit">Send</button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="contact-details" id="particles-js">
+            
+          </div> -->
+        </div>
+      </section>
+      <!-- Footer Section-->
+      <footer class="bg-dark text-light p-3 d-flex justify-content-center align-items-center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, dolores?</p>
+      </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

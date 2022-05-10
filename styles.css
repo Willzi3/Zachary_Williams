@@ -30,23 +30,85 @@
     cursor: pointer;
     
 }
-/* skills section */
-.skills-item {
-    border: 1px solid black;
-    width: 100px;
-    height: 100px;
+/* Contact section */
+.Jumbotron {
+    width: 100%;
+    height: 500px;
+    background-image: url(./images/istockphoto-1307794659-170667a.jpg);
+    background-attachment: fixed;
 }
 
-.skills-item i {
-    font-size: 100px;
-}
-
-#skills .title h2{
-    text-align: center;
-    font-size: 5rem;
+.Jumbotron h1 {
+    font-size: 4rem;
     font-weight: bold;
+    font-family: 'Alfa Slab One';
+}
+.Jumbotron h1:hover {
+   text-decoration: line-through dotted lightslategray;
+}
+#particles-js {
+    background-color: black;
 }
 
-/* #particles-js {
-    background-color: red;;
+/* .contact-details {
+    height: 50vh;
+    
 } */
+/* Project */
+.project {
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.staff {
+    position: relative;
+  }
+  .staff img {
+      width: 100%;
+      height: 500px;
+      border-radius: 20px;
+      background-size: cover;
+  }
+  
+  .staff-details {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    opacity: 0;
+    transition: all 0.3s linear;
+    border-radius: 20px;
+  }
+  
+  .staff:hover .staff-details {
+    opacity: 1;
+  }
+
+/* Testimonial Section */
+#testimonial .container{
+    height: 60vh;
+}
+
+.title h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Alfa Slab One';
+}
+
+@media (max-width: 768px) {
+    .Jumbotron h1 {
+        font-size: 3rem;
+    }
+}
