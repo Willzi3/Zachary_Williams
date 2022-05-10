@@ -30,6 +30,11 @@
     cursor: pointer;
     
 }
+/* skills */
+i {
+    font-size: 100px;
+    text-align: center;
+}
 /* Contact section */
 .Jumbotron {
     width: 100%;
@@ -61,6 +66,12 @@
     border: 1px solid black;
 }
 
+/* #project h2 {
+    transform: rotate(-15deg);
+    z-index: 100;
+    position: relative;
+} */
+
 .staff {
     position: relative;
   }
@@ -86,10 +97,29 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     opacity: 0;
     transition: all 0.3s linear;
     border-radius: 20px;
+    cursor: crosshair;
+  }
+
+  .staff-details button {
+      background-color: transparent;
+      font-size: 32px;
+      color: white;
+      font-weight: bold;
+      border: 2px solid white;
+      border-radius: 20px;
+      width: 150px;
+  }
+
+  .staff-details button:hover {
+      background-color: lightslategray;
+      border: none;
+      
   }
   
   .staff:hover .staff-details {
