@@ -9,11 +9,39 @@
 /* Landing */
 #landing {
     border: 1px solid black;
+    background-image: url(./images/josh-rose-trYl7JYATH0-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.about-btn button{
+    background-color: transparent;
+    border: none;
+}
+.about-btn button{
+    background-color: transparent;
+    border: none;
+}
+.about-btn button:hover{
+    text-shadow: 2px 2px white;
+}
+.titles:hover {
+    transform: rotate(180deg);
+    cursor: pointer;
+    text-shadow: 2px 2px lightslategray;
+}
+
+.titles h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    
 }
 
 /* About Section */
-
-.about_img img {
+#About .container {
+    border-radius: 20px;
+}
+.About_img img {
     width: 400px;
     height: auto;
     border-radius: 20px;
@@ -24,13 +52,21 @@
     font-size: 5rem;
     font-weight: bold;
 }
-
+.title h2 {
+    font-family: 'Alfa Slab One';
+}
 .title:hover {
-    text-decoration: line-through;
+    transform: rotate(-15deg);
     cursor: pointer;
+    position: relative;
+    text-shadow: 5px 5px black;
     
 }
 /* skills */
+#skills .container {
+    background-color: #afafaf;
+    border-radius: 20px;
+}
 i {
     font-size: 100px;
     text-align: center;
@@ -49,7 +85,7 @@ i {
     font-family: 'Alfa Slab One';
 }
 .Jumbotron h1:hover {
-   text-decoration: line-through dotted lightslategray;
+   text-decoration: line-through;
 }
 #particles-js {
     background-color: black;
@@ -60,6 +96,10 @@ i {
     
 } */
 /* Project */
+#project .container {
+    background-color: #afafaf;
+    border-radius: 20px;
+}
 .project {
     width: 100%;
     height: 500px;
@@ -71,7 +111,20 @@ i {
     z-index: 100;
     position: relative;
 } */
+/* resume  */
+/* .education {
+    border-right: 5px solid white;
+}
 
+.education:hover {
+    border-right: 10px solid white;
+}
+.experience:hover {
+    border-left: 10px solid black;
+} */
+#resume .container {
+    border-radius: 20px;
+}
 .staff {
     position: relative;
   }
@@ -129,6 +182,19 @@ i {
 /* Testimonial Section */
 #testimonial .container{
     height: 60vh;
+    border-radius: 20px;
+}
+
+#testimonial .card {
+    border: none;
+    background: transparent;
+}
+
+.t_img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
 .title h2 {
