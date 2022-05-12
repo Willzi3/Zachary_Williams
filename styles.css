@@ -30,7 +30,7 @@ body {
     text-shadow: 2px 2px white;
 }
 .titles:hover {
-    transform: rotate(-90deg);
+    transform: rotate(180deg);
     cursor: pointer;
     text-shadow: 2px 2px lightslategray;
 }
@@ -71,45 +71,58 @@ body {
 }
 /* skills */
 #skills .container {
-    background-color: #afafaf;
     border-radius: 20px;
-}
-.titles1 h2 {
-    font-size: 4rem;
-    font-family: 'Alfa Slab One';
-}
-.soft ul li {
-    font-size: 20px;
-}
-.titles1 h2:hover {
-    text-decoration: line-through white;
-}
-i {
-    font-size: 80px;
-    text-align: center;
-}
-.skills-item{
+    height: 50vh;
     display: flex;
-    justify-content: center;
-    border-radius: 20px;
-    border: none;
-    width: 100px;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
- 
-.skills-item:hover{
-   color: white;
-   text-shadow: 2px 2px black;
-   cursor: crosshair;
-   border-radius: 50%;
-   background-color: #212529;
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
 }
-#skills .row .col-md-6{
-    border: 1px solid white;
-    border-radius: 20px;
-    /* background: #212529;
-    color: white; */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front i {
+    font-size: 150px;
+    color: white;
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.flip-card-front {
+  background-color: #212529;
+  color: white;
+  padding: 20px;
+}
+.flip-card-back {
+  background-color: #212529;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+  padding-top: 60px;
+}
+.progress {
+    width: 260px;
+}
+
 /* Contact section */
 #contact .container {
     border-radius: 20px;
@@ -293,6 +306,17 @@ form button:hover{
     .jumbo{
         font-size: 3rem;
     }
+    .flip-card{
+        width: 200px;
+        height: 200px;
+    }
+    #skills .container{
+        height: 80vh;
+    }
+    .progress {
+        width: 160px;
+    }
+
 }
 @media (max-width: 768px) {
     .Jumbotron h1 {
@@ -307,9 +331,6 @@ form button:hover{
     }
     #about h2 {
         font-size: 3rem;
-    }
-    #testimonial h2 {
-        font-size: 2.5rem;
     }
     .about_img {
         display: none;
@@ -332,6 +353,16 @@ form button:hover{
     #skills {
         padding: 20px;
     }
+    .staff img {
+        height: 250px;
+    }
+    .staff-details button{
+        width: 100px;
+        font-size: 20px;
+    }
+    .staff-details p{
+        display: none;
+    }
     #project {
         padding: 20px;
     }
@@ -345,7 +376,7 @@ form button:hover{
         flex-wrap: wrap;
     } */
     #testimonial h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         letter-spacing: 1px;
     }
     #testimonial {
