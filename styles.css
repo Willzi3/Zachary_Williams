@@ -5,7 +5,11 @@
     scroll-behavior: smooth;
     font-family: sans-serif;
 }
-
+body {
+    background-image: url(./images/annie-spratt-6a3nqQ1YwBw-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 /* Landing */
 #landing {
     border: 1px solid black;
@@ -26,7 +30,7 @@
     text-shadow: 2px 2px white;
 }
 .titles:hover {
-    transform: rotate(180deg);
+    transform: rotate(-90deg);
     cursor: pointer;
     text-shadow: 2px 2px lightslategray;
 }
@@ -81,26 +85,35 @@
     text-decoration: line-through white;
 }
 i {
-    font-size: 100px;
+    font-size: 80px;
     text-align: center;
 }
 .skills-item{
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
     border-radius: 20px;
+    border: none;
+    width: 100px;
+    align-items: center;
 }
  
 .skills-item:hover{
    color: white;
    text-shadow: 2px 2px black;
-   background-color:#212529;
-   border: 3px solid white;
+   cursor: crosshair;
+   border-radius: 50%;
+   background-color: #212529;
+}
+#skills .row .col-md-6{
+    border: 1px solid white;
+    border-radius: 20px;
+    /* background: #212529;
+    color: white; */
 }
 /* Contact section */
 #contact .container {
     border-radius: 20px;
+    padding-top: 10px;
 }
 .Jumbotron {
     width: 100%;
@@ -110,7 +123,9 @@ i {
     background-attachment: fixed;
     border-radius: 20px;
 }
-
+.Jumbo .container {
+    margin-top: 20px;
+}
 .Jumbotron h1 {
     font-size: 4rem;
     font-weight: bold;
@@ -129,8 +144,21 @@ i {
 .map iframe{
     border: 5px solid #212529;
     border-radius: 20px;
+    width: 418px;
+    height: 300px;
 }
-
+form button {
+    background-color: #212529;
+    color: white;
+    width: 200px;
+    border-radius: 20px;
+    padding: 5px;
+}
+form button:hover{
+    background: white;
+    color: black;
+    font-weight: bold;
+}
 /* .contact-details {
     height: 50vh;
     
@@ -241,9 +269,84 @@ i {
     font-weight: bold;
     font-family: 'Alfa Slab One';
 }
-
+@media (max-width: 1286px) {
+    .map{
+        width: 370;
+    }
+    .map iframe{
+        width: 350px;
+    }
+    #resume .accorodion{
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .map,iframe {
+        display: none;
+    }
+    div.col-md-5{
+        display: none;
+    }
+    .Jumbotron {
+        height: 300px;
+    }
+    .jumbo{
+        font-size: 3rem;
+    }
+}
 @media (max-width: 768px) {
     .Jumbotron h1 {
         font-size: 3rem;
+        text-align: center;
+        letter-spacing: 0.9px;
+    }
+}
+@media (max-width: 500px) {
+    #about {
+        padding: 20px;
+    }
+    #about h2 {
+        font-size: 3rem;
+    }
+    .about_img {
+        display: none;
+    }
+    .Jumbotron {
+        height: 200px;
+    }
+    .Jumbotron h1 {
+        font-size: 2rem;
+    }
+    #contact {
+        padding: 10px;
+    }
+    #resume {
+        padding: 20px;
+    }
+    .rounded-circle {
+        display: none;
+    }
+    #skills {
+        padding: 20px;
+    }
+    /* .row .skills-item{
+        width: 150px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #skills .row{
+        display: flex;
+        flex-wrap: wrap;
+    } */
+    #testimonial h2 {
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+    #testimonial {
+        padding: 20px;
+    }
+    .title h2 {
+        font-size: 3rem;
+        letter-spacing: 2px;
     }
 }
