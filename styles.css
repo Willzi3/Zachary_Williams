@@ -32,6 +32,7 @@ body {
 .titles:hover {
     transform: rotate(180deg);
     cursor: pointer;
+    transition: all 1s ease-in-out;
     text-shadow: 2px 2px lightslategray;
 }
 
@@ -41,6 +42,9 @@ body {
     
 }
 #landing .title p {
+    font-size: 100px;
+}
+#landing .about-btn button {
     font-size: 100px;
 }
 
@@ -355,9 +359,6 @@ form button:hover{
     .map iframe{
         width: 350px;
     }
-    #resume .accorodion{
-        display: none;
-    }
 }
 @media (max-width: 992px) {
     .map,iframe {
@@ -392,12 +393,14 @@ form button:hover{
     }
     .flip-card{
         height: 150px;
+        width: 150px;
     }
     .flip-card-front i{
         font-size: 100px;
     }
-    #skills .row {
-        height: 100vh;
+    #skills {
+        height: 80vh;
+        margin-bottom: 50px;
     }
 }
 @media (max-width: 575px) {
