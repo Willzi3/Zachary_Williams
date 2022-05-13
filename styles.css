@@ -40,6 +40,9 @@ body {
     font-weight: bold;
     
 }
+#landing .title p {
+    font-size: 100px;
+}
 
 
 /* About Section */
@@ -282,6 +285,69 @@ form button:hover{
     font-weight: bold;
     font-family: 'Alfa Slab One';
 }
+/* Time-line */
+.timelines {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+  }
+  .timeline-title {
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .timeline-item {
+    margin-bottom: 2em;
+    color: black;
+  }
+  .timeline-item h3 {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+  }
+  .timeline-item h3::before {
+    content: "";
+    position: absolute;
+    left: -2.35em;
+    background-color: white;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    transform: translate(-0.5px, 0.2em);
+  }
+  .timeline-items {
+    margin: 2em;
+    padding: 0.01em 0 3em 2em;
+    border-left: 1px solid white;
+  }
+  .timeline-item {
+    margin-top: -0.3em;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .timeline-item time {
+    display: block;
+    float: left;
+    background-color:#212529;
+    padding: 0.2em 0.4em;
+    color: white;
+    border-radius: 20px;
+  }
+  .timeline-item > * {
+    margin: 1em 0;
+  }
+  .timeline-item .location {
+    clear: both;
+    font-size: 0.85em;
+    font-style: italic;
+  }
 @media (max-width: 1286px) {
     .map{
         width: 370;
@@ -323,6 +389,35 @@ form button:hover{
         font-size: 3rem;
         text-align: center;
         letter-spacing: 0.9px;
+    }
+    .flip-card{
+        height: 150px;
+    }
+    .flip-card-front i{
+        font-size: 100px;
+    }
+    #skills .row {
+        height: 100vh;
+    }
+}
+@media (max-width: 575px) {
+    #about{
+        padding: 20px;
+    }
+    #skills{
+        padding: 20px;
+    }
+    #resume{
+        padding: 20px;
+    }
+    #project{
+        padding: 20px;
+    }
+    #testimonial{
+        padding: 20px;
+    }
+    #contact{
+        padding: 20px;
     }
 }
 @media (max-width: 500px) {
