@@ -10,6 +10,34 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+/* navbar */
+.navbar-brand{
+    border: 3px solid white;
+    padding: 2px;
+}
+/* social icons */
+
+#social-icons {
+    position: fixed;
+    z-index: 20;
+    right: 1%;
+    bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 20px;
+    background-color: #212529;
+    }
+
+    .social-icon {
+        font-size: 30px;
+        color: white;
+    }
+
 /* Landing */
 #landing {
     border: 1px solid black;
@@ -79,10 +107,15 @@ body {
 /* skills */
 #skills .container {
     border-radius: 20px;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+#skills div.col-md-4 {
+    margin-bottom: 5px;
+    display: flex;
     justify-content: center;
 }
 .flip-card {
@@ -359,6 +392,9 @@ form button:hover{
     .map iframe{
         width: 350px;
     }
+    .skills-p2{
+        display: none;
+    }
 }
 @media (max-width: 992px) {
     .map,iframe {
@@ -378,7 +414,7 @@ form button:hover{
         height: 200px;
     }
     #skills .container{
-        height: 80vh;
+        height: 60vh;
     }
     .progress {
         width: 160px;
@@ -391,25 +427,27 @@ form button:hover{
         text-align: center;
         letter-spacing: 0.9px;
     }
-    .flip-card{
-        height: 150px;
-        width: 150px;
-    }
-    .flip-card-front i{
-        font-size: 100px;
-    }
     #skills {
-        height: 80vh;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 }
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     #about{
         padding: 20px;
     }
     #skills{
         padding: 20px;
     }
+   .flip-card {
+       width: 150px;
+       height: 150px;
+   }
+   #skills .container{
+       height: 80vh;
+   }
+   .flip-card-front i{
+       font-size: 80px;
+   }
     #resume{
         padding: 20px;
     }
