@@ -15,6 +15,11 @@ body {
     border: 3px solid white;
     padding: 2px;
 }
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 /* social icons */
 
 #social-icons {
@@ -57,12 +62,12 @@ body {
 .about-btn button:hover{
     text-shadow: 2px 2px white;
 }
-.titles:hover {
+/* .titles:hover {
     transform: rotate(180deg);
     cursor: pointer;
     transition: all 1s ease-in-out;
     text-shadow: 2px 2px lightslategray;
-}
+} */
 
 .titles h1 {
     font-size: 5rem;
@@ -521,5 +526,13 @@ form button:hover{
     .title h2 {
         font-size: 3rem;
         letter-spacing: 2px;
+    }
+}
+@media (max-width: 370px) {
+    .title h2 {
+        font-size: 2rem;
+    }
+    h2.title{
+        font-size: 2rem;
     }
 }
