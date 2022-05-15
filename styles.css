@@ -605,5 +605,11 @@ form button:hover{
     .titles h1 {
         font-size: 4rem;
     }
+    .about-details {
+        display: none;
+    }
+    #about h2{
+        font-size: 2rem;
+    }
 
 }
