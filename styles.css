@@ -42,7 +42,6 @@ body {
         font-size: 30px;
         color: white;
     }
-
 /* Landing */
 #landing {
     border: 1px solid black;
@@ -83,18 +82,26 @@ body {
 
 
 /* About Section */
-#About .container {
+#about .container {
     border-radius: 20px;
 }
-.About_img img {
+.about_img img {
     width: 400px;
-    height: auto;
+    height: 450px;
     border-radius: 20px;
     margin-bottom: 50px;
+    border: 5px solid white;
 }
+.about_img img:hover {
+    cursor: pointer;
+    transform: rotate(-8deg);
+}
+/* #about .col-md-6:hover{
+    transform: rotate(8deg);
+} */
 
 .title {
-    font-size: 5rem;
+    font-size: 3rem;
     
     font-family: 'Alfa Slab One';
 
@@ -295,7 +302,7 @@ form button:hover{
   }
 
   .staff-details button:hover {
-      background-color: lightslategray;
+      background-color: #212529;
       border: none;
       
   }
@@ -390,6 +397,13 @@ form button:hover{
     font-size: 0.85em;
     font-style: italic;
   }
+  /*footer*/
+  footer {
+      padding: 10px;
+  }
+  .socials{
+      display: none;
+  }
 @media (max-width: 1286px) {
     .map{
         width: 370;
@@ -400,6 +414,17 @@ form button:hover{
     .skills-p2{
         display: none;
     }
+    /* #about .row {
+        display: flex;
+        flex-direction: column;
+    }
+    #about .col-md-6 {
+        width: 100%;
+    }
+    .about-details {
+        display: none;
+    } */
+    
 }
 @media (max-width: 992px) {
     .map,iframe {
@@ -426,14 +451,32 @@ form button:hover{
     }
 
 }
+@media (max-width: 847px) {
+    #social-icons{
+        display: none;
+    }
+    .socials{
+        display: block;
+    }
+}
 @media (max-width: 768px) {
     .Jumbotron h1 {
         font-size: 3rem;
         text-align: center;
         letter-spacing: 0.9px;
     }
+    
     #skills {
         margin-bottom: 10px;
+    }
+    #skills .container {
+        height: 80vh;
+    }
+    .title h2 {
+        font-size: 2.5rem;
+    }
+    #testimonial .container {
+        height: 70vh;
     }
 }
 @media (max-width: 576px) {
@@ -444,14 +487,13 @@ form button:hover{
         padding: 20px;
     }
    .flip-card {
-       width: 150px;
-       height: 150px;
+       height: 155px;
    }
    #skills .container{
-       height: 80vh;
+       height: 120vh;
    }
    .flip-card-front i{
-       font-size: 80px;
+       font-size: 100px;
    }
     #resume{
         padding: 20px;
@@ -467,6 +509,10 @@ form button:hover{
     }
 }
 @media (max-width: 500px) {
+    .t_msg{
+        max-height: 342px;
+        overflow: hidden;
+    }
     #about {
         padding: 20px;
     }
@@ -495,11 +541,20 @@ form button:hover{
         padding: 20px;
     }
     .staff img {
-        height: 250px;
+        height: 200px;
+        display: flex;
+        /* flex-direction: column; */
+        gap: 10px;
     }
-    .staff-details button{
+    #project .staff-details button{
         width: 100px;
         font-size: 20px;
+    }
+    /* .staff_btn button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    } */
     }
     .staff-details p{
         display: none;
@@ -527,12 +582,28 @@ form button:hover{
         font-size: 3rem;
         letter-spacing: 2px;
     }
-}
+    @media (max-width: 416px) {
+    .staff_btn{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        }
+        #project .title h2 {
+            font-size: 2rem;
+        }
+    }
 @media (max-width: 370px) {
     .title h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     h2.title{
         font-size: 2rem;
     }
+    #testimonial h2 {
+        font-size: 1.5rem;
+    }
+    .titles h1 {
+        font-size: 4rem;
+    }
+
 }

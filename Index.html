@@ -26,9 +26,9 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-flex  justify-content-end " id="navbarNav">
+          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item text-white">
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
@@ -79,14 +79,14 @@
       </section>
       <!-- About Section -->
       <section id="about" class="mb-5">
-          <div class="container shadow p-5 bg-dark text-light">
+          <div class="container shadow p-5 bg-dark text-light" data-aos="flip-up">
               <div class="row mx-5">
-                  <div class="col-md-6">
-                      <div class="about_img">
+                  <div class="col-md-6" data-aos="fade-right">
+                      <div class="about_img" >
                           <img class="img-fluid" src="./images/Zachary1.jpg" alt="">
                       </div>
                   </div>
-                  <div class="col-md-6 d-flex flex-column justify-content-center">
+                  <div class="col-md-6 d-flex flex-column justify-content-center" data-aos="fade-left">
                       <h2 class="title">ABOUT ME</h2>
                       <p>I like to describe myself as focused and dedicated. If I do something, I do it to the best of my abilities. If I do not know the answer to something, I won't just sit back and have the answer handed to me. I will make sure to find the answer.</p>
                       <div class="about-details">
@@ -117,8 +117,8 @@
       </section>
       <!-- Skills -->
       <section id="skills">
-        <div class="container bg-white mb-5">
-          <div class="row mb-3">
+        <div class="container bg-white mb-5" data-aos="flip-up">
+          <div class="row mb-3" data-aos="fade-right">
             <div class="col-md-4 col-sm-6">
               <div class="flip-card">
                 <div class="flip-card-inner">
@@ -234,7 +234,7 @@
       </section>
       <!-- Resume -->
       <section id="resume">
-        <div class="container bg-dark text-light shadow mb-5 p-5">
+        <div class="container bg-dark text-light shadow mb-5 p-5" data-aos="flip-up">
           <div class="title text-center">
             <h2>RESUME</h2>
           </div>
@@ -291,11 +291,11 @@
       </section>
       <!-- Project -->
       <section id="project">
-        <div class="container bg-white shadow p-5 mb-5">
+        <div class="container bg-white shadow p-5 mb-5" data-aos="flip-up">
           <div class="title text-center">
             <h2>PROJECTS</h2>
           </div>
-          <div class="staff d-flex justify-content-center mb-5">
+          <div class="staff d-flex justify-content-center mb-5" data-aos="fade-right">
             <img class="img-fluid" src="./images/milad-fakurian-PpgY7sjpf_0-unsplash.jpg" />
             <div class="staff-details">
               <h3>Cube Navigation</h3>
@@ -307,7 +307,7 @@
               </div>
             </div>
           </div>
-          <div class="staff d-flex justify-content-center mb-5">
+          <div class="staff d-flex justify-content-center mb-5" data-aos="fade-left">
             <img class="img-fluid" src="./images/charlesdeluvio-GlavtG-umzE-unsplash.jpg" />
             <div class="staff-details">
               <h3>Calculator</h3>
@@ -319,7 +319,7 @@
               </div>
             </div>
           </div>
-          <div class="staff d-flex justify-content-center mb-5">
+          <div class="staff d-flex justify-content-center mb-5" data-aos="fade-right">
             <img class="img-fluid" src="./images/jason-leung-poI7DelFiVA-unsplash.jpg" />
             <div class="staff-details">
               <h3>Restaurantly Website</h3>
@@ -331,7 +331,7 @@
               </div>
             </div>
           </div>
-          <div class="staff d-flex justify-content-center mb-5">
+          <div class="staff d-flex justify-content-center mb-5" data-aos="fade-left">
             <img class="img-fluid" src="./images/adeolu-eletu-DqWEAOHsAvc-unsplash.jpg" />
             <div class="staff-details">
               <h3>SignIn Navigation</h3>
@@ -347,7 +347,7 @@
       </section>
       <!-- Testimonial -->
       <section id="testimonial">
-        <div class="container bg-dark text-light shadow mb-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="container bg-dark text-light shadow mb-5 d-flex flex-column justify-content-center align-items-center" data-aos="flip-up">
           <div class="title">
             <h2>TESTIMONIAL</h2>
           </div>
@@ -422,7 +422,7 @@
       </section>
       <!-- Contact Section -->
       <section id="contact">
-        <div class="container bg-white shadow mb-5">
+        <div class="container bg-white shadow mb-5" data-aos="flip-up">
           <div class="Jumbotron d-flex justify-content-center align-items-center mb-5">
              <div class="jumbo text-white d-flex justify-content-center p-5">
                <h1>Let's Do Great Things Together.</h1>
@@ -465,9 +465,21 @@
         </div>
       </section>
       <!-- Footer Section-->
-      <footer class="bg-dark text-light d-flex flex-column justify-content-center align-items-center">
-        <p>All Rights Reserved © 2022.</p>
-        <p>Designed By Zachary</p>
+      <footer class="bg-dark text-light d-flex justify-content-center align-items-center">
+        <div class="footer-details">
+          <p>All Rights Reserved © 2022. Designed By Zachary</p>
+        </div>
+        <div class="socials">
+          <a class="social-icon" target="_blank" href="https://github.com/Willzi3">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/zachary-williams-b3388a237/">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="social-icon" target="_blank" href="https://codepen.io/Willzi3">
+          <i class="fa-brands fa-codepen"></i>
+        </a>
+        </div>
       </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
