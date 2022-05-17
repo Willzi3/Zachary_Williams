@@ -265,6 +265,7 @@ form button:hover{
       height: 500px;
       border-radius: 20px;
       background-size: cover;
+      border: 10px solid #212529;
   }
   
   .staff-details {
