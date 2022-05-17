@@ -478,6 +478,9 @@ form button:hover{
     #testimonial .container {
         height: 70vh;
     }
+    #skills .flip-card{
+        height: 180px;
+    }
 }
 @media (max-width: 576px) {
     #about{
@@ -486,11 +489,11 @@ form button:hover{
     #skills{
         padding: 20px;
     }
-   .flip-card {
-       height: 155px;
+   #skills .flip-card {
+       height: 125px;
    }
    #skills .container{
-       height: 120vh;
+       height: 110vh;
    }
    .flip-card-front i{
        font-size: 100px;
@@ -507,6 +510,7 @@ form button:hover{
     #contact{
         padding: 20px;
     }
+
 }
 @media (max-width: 500px) {
     .t_msg{
